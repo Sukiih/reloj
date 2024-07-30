@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contenedor-reloj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #000 0%, #333 100%);
+}
+
+#reloj{
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+    border: 5px solid rgb(90, 63, 4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: radial-gradient(circle, #f9f9f9 0%, #dddddda1 100%);
+}
+
+.manecilla{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+#manecilla-horas{
+    width: 3%;
+    height: 25%;
+    background: linear-gradient(to bottom, #444 0%, #020202 100%);
+}
+
+#manecilla-minutos{
+    width: 2%;
+    height: 40%;
+    background: linear-gradient(to bottom, #777 0%, #444 100%);
+}
+
+#manecilla-segundos{
+    width: 1%;
+    height: 45%;
+    background: linear-gradient(to bottom, #f00 0%, #600 100%);
+}
+
+#punto{
+    width: 6%;
+    height: 6%;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.numero {
+    position: absolute;
+    font-size: 16px; 
+    color: #000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+/*Posicionamiento de números*/
+#numero-1 { transform: translate(-50%, -50%); top: 12%; left: 75%; }
+#numero-2 { transform: translate(-50%, -50%); top: 27%; left: 89%; }
+#numero-3 { transform: translate(-50%, -50%); top: 50%; left: 96%; }
+#numero-4 { transform: translate(-50%, -50%); top: 73%; left: 90%; }
+#numero-5 { transform: translate(-50%, -50%); top: 89%; left: 75%; }
+#numero-6 { transform: translate(-50%, -50%); top: 95%; left: 50%; }
+#numero-7 { transform: translate(-50%, -50%); top: 90%; left: 25%; }
+#numero-8 { transform: translate(-50%, -50%); top: 73%; left: 10%; }
+#numero-9 { transform: translate(-50%, -50%); top: 50%; left: 3%; }
+#numero-10 { transform: translate(-50%, -50%); top: 27%; left: 11%; }
+#numero-11 { transform: translate(-50%, -50%); top: 12%; left: 25%; }
+#numero-12 { transform: translate(-50%, -50%); top: 5%; left: 50%; }
